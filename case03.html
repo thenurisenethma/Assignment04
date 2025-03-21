@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case03</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        div{
+            background-color: white;
+            width: 330px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #div1{
+            background: linear-gradient(red,white,white,white);
+        }
+        #div2{
+            background-color: gray;
+            width: 300px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            z-index: 2;
+            color: black;
+            display: flex;
+            font-size: 24px;
+            justify-content: center;
+            align-items: center;
+        }
+        #div1:hover{
+            transform:rotate(360deg);
+            transition-duration: 2000ms;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+<div id="div2">RWAD</div>
+</body>
+</html>

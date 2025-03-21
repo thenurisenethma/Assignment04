@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case05</title>
+    <style>
+        section{
+            width: 800px;
+            height: 500px;
+            position: absolute;
+            border: solid black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #img1{
+            animation-duration: 10000ms;
+            animation-name: slider1;
+            width: 800px;
+            height: 500px;
+            animation-iteration-count: infinite;
+        }
+        #img2{
+            animation-name: slider2;
+            animation-delay: 10000ms;
+            animation-duration: 10000ms;
+            width: 800px;
+            height: 500px;
+            animation-iteration-count: infinite;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -100%;
+        }
+        #img3{
+            animation-name: slider2;
+            animation-delay: 20000ms;
+            animation-duration: 10000ms;
+            width: 800px;
+            height: 500px;
+            animation-iteration-count: infinite;
+            top: 0;
+            bottom: 0;
+            right: -200%;
+        }
+        #img4{
+            animation-name: slider2;
+            animation-delay: 30000ms;
+            animation-duration: 10000ms;
+            width: 800px;
+            height: 500px;
+            animation-iteration-count: infinite;
+            top: 0;
+            bottom: 0;
+            right: -400%;
+        }
+        @keyframes slider1 {
+           from{
+               margin-left: 50%;
+
+           }
+            to{
+                margin-left: -100%;
+            }
+        }
+        @keyframes slider2 {
+            from{
+                margin-right: -100%;
+            }
+            to{
+                margin-left: -100%;
+            }
+        }
+
+        @keyframes slider3 {
+            from {
+                margin-right: -100%;
+            }
+            to {
+                margin-left: -100%;
+            }
+        }
+        @keyframes slider4 {
+            from {
+                margin-right: -100%;
+            }
+            to {
+                margin-left: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <img id="img1" src="lib/imgs/slide1.png" >
+        <img id="img2" src="lib/imgs/slide2.png" >
+        <img id="img3" src="lib/imgs/slide3.png" >
+        <img id="img4" src="lib/imgs/slide4.png" >
+    </div>
+</section>
+</body>
+</html>
