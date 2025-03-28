@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case06</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/normalize.css" >
+    <style>
+
+        #sky{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #city,#city2{
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 9;
+            animation-direction: normal;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-name: city;
+        }
+        #city2{
+            position: absolute;
+            top: 100px;
+            left: 1400px;
+            margin: auto;
+            z-index: 9;
+        }
+
+        #road1,#road2,#road3{
+            z-index: 99;
+            animation-direction: normal;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-name: road;
+        }
+        #road1{
+            position: absolute;
+            top: 330px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            animation-name: road;
+
+        }
+        #road3{
+            position: absolute;
+            top: 330px;
+            bottom: 0;
+            left: 1265px;
+            margin: auto;
+            animation-name: road;
+
+        }
+        #car{
+            position: absolute;
+            top: 300px;
+            bottom: 0;
+            left: 200px;
+
+            margin: auto;
+            z-index: 999;
+        }
+
+        #w1{
+            position: absolute;
+            top: 370px;
+            margin: auto;
+            z-index: 9999;
+            left: 229px;
+            animation-duration: 5000ms;
+            animation-direction: inherit;
+            rotation-point: center;
+            animation-iteration-count: infinite;
+            animation-name: wheels;
+        }
+        #w2{
+            position: absolute;
+            top: 370px;
+            margin: auto;
+            z-index: 9999;
+            left: 450px;
+            animation-duration: 5000ms;
+            animation-direction: initial;
+            rotation-point: center;
+            animation-iteration-count: infinite;
+            animation-name: wheels;
+        }
+
+        @keyframes wheels {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+
+            }
+        }
+        @keyframes road {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left: -500px;
+            }
+        }
+
+        @keyframes city {
+            from{
+                margin-left:0;
+            }
+            to{
+                margin-left: -500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="car">
+    <img src="lib/imgs/car.png" height="150px">
+</div>
+
+
+    <img id="city" src="lib/imgs/city.png" >
+    <img id="city2" src="lib/imgs/city.png" >
+
+
+    <img id="road1" src="lib/imgs/road.jpg" width="1265px" height="250">
+    <img id="road2"src="lib/imgs/road.jpg" width="1265px" height="250">
+    <img id="road3"src="lib/imgs/road.jpg" width="1265px" height="250">
+
+<div id="sky">
+    <img src="lib/imgs/sky.jpg" height="650px" width="1265px">
+</div>
+
+<div class="wheel">
+    <img id="w1" src="lib/imgs/wheel.png" height="70px">
+    <img id="w2" src="lib/imgs/wheel.png" height="70px">
+</div>
+
+</body>
+</html>
